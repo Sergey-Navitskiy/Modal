@@ -34,7 +34,7 @@ document.querySelector('.overlay').addEventListener('click',function(){
 })
 
 document.addEventListener('keydown', function(event){
-    if(event.code == 'Escape'){
+    if(event.code == 'Escape' && !modalWindow.classList.contains('hidden')){
         modalWindow.classList.toggle('hidden')
         overlay.classList.toggle('hidden')
     }
